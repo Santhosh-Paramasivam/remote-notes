@@ -1,3 +1,12 @@
+---
+id: azure-services
+aliases: []
+tags:
+  - #azure
+  - #cloud
+  - #cloud-components
+---
+
 # Azure Services
 
 ## Azure Monitor

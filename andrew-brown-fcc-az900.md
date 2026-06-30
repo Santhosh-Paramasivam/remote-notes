@@ -1,3 +1,13 @@
+---
+id: andrew-brown-fcc-az900
+aliases: []
+tags:
+  - #azure
+  - #cloud
+  - #cloud-components
+  - #az-900
+---
+
 # Andrew Brown FreeCodeCamp
 
 ## Current Timestamp: 24:30

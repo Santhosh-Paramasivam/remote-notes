@@ -1,3 +1,12 @@
+---
+id: cloud-basics
+aliases: []
+tags:
+  - #cloud
+  - #azure
+  - #cloud-components
+---
+
 # Cloud Basics
 
 ## Reason

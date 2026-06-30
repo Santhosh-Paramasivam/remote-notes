@@ -1,3 +1,12 @@
+---
+id: exam-preparation-dan-lachance-az900
+aliases: []
+tags:
+  - #cloud
+  - #azure
+  - #cloud-components
+---
+
 # Microsoft Azure Fundamentals: AZ-900 Exam Preparation
 
 - By Dan Lachance

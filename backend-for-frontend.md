@@ -1,3 +1,13 @@
+---
+id: backend-for-frontend
+aliases:
+  - bff
+tags:
+  - #azure
+  - #cloud
+  - #cloud-components
+---
+
 # Backend for Frontend
 
 [microsoft-learn](https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)
