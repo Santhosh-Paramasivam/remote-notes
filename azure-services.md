@@ -75,3 +75,13 @@ tags:
 - Built in L7 Load Balancer
 - Identifies and exposes AKS deployed services
 - WAF
+
+## Elastic Services
+
+### Azure VM Scale Sets
+
+- Automatically increase or decrease in response to demand or a defined schedule
+
+### SQL Server Stretch Database
+
+- Dynamically stretch warm and cold transactional data from Microsoft SQL Server 2016 to Microsoft Azure

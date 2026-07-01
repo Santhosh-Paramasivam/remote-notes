@@ -48,6 +48,7 @@ tags:
 - Reliable: data backup, disaster recovery, data replication, and fault tolerance
 - Scalable
 - Elastic: Automatic scaling
+- Availability
 
 > [!IMPORTANT]
 > Inherently and easily global and almost always more secure and reliable
@@ -110,3 +111,36 @@ A solutions architect that is focused solely on architecting technical solutions
 Such an architect has to consider:
   - Security: How secure is this solution
   - Cost: How much is this going to cost
+
+## Key Performance Indications
+
+### High Availability
+
+- The ability of your service to *remain available* by ensuring that *there is no single point of failure* and/or *ensure a certain level of performance*
+
+- Running your workload across multiple **Availability Zones** makes sure that even if one datacenter goes down, the others still keep running
+
+- Needs a **Load Balancer** to evenly distribute traffic
+
+### High Scalability
+
+- The ability to *increase your capacity* based on the increasing demand of traffic, memory and computing power
+
+- Types of scaling:
+  - Vertical scaling: Adding more resources to existing instances
+  - Horizontal scaling: Increasing the number of instances
+
+### High Elasticity
+
+- The ability to *automatically* increase or decrease your capacity based on the current demand
+
+- Horizontal scaling:
+  - *Scaling Out*: Add more servers of the same size
+  - *Scaling In*: Removing more servers of the same size
+
+> [!NOTE]
+> Vertical scaling is generally hard for traditional architecture so this is typically used with horizontal scaling only
+
+- Utilizes specific tools specified in [azure-services](azure-services.md)
+  - Azure VM Scale Sets
+  - SQL Server 2016 to Microsoft Azure
