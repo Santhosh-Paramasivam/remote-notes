@@ -12,8 +12,9 @@ tags:
 
 ## Progress
 
-- Current Timestamp: 53:00
-- Current Progress Percent: 12%
+- Current Course Timestamp: 58:00
+- Current Course Progress Percent: 12%
+- Topics completed: 1 / 18
 - Have not reviewed:
   - Microsoft Learn
   - Azure specific services in depth
@@ -41,3 +42,4 @@ tags:
 ## Misc
 
 - Take free and paid sample exams on WhizLabs
+

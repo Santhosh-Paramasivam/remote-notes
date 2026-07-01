@@ -156,3 +156,44 @@ Such an architect has to consider:
 - A common example: Having multiple exact copies of your database where all ongoing changes are synced. The secondary system is *not in-use* until a fail over occurs and it becomes the primary database
 
 - Azure Traffic Manager
+
+## Business Continuity Plan (BCP)
+
+> [!IMPORTANT]
+
+- A document that outlines how a business will continue operating during an *unplanned disruption in services*
+
+### Recovery Point Objective (RPO)
+
+- The acceptable amount of data loss after a data-loss incident, expressed as *an amount of time*
+
+- How much data are you willing to lose?
+
+### Recovery Time Objective (RTO)
+
+- The acceptable amount of time before the service resumes to operating normally, following a disaster
+
+- The maximum amount of downtime your business can tolerate without incurring a significant financial loss
+
+- How much time are you willing to go down for?
+
+### Disaster Recovery Options
+
+- Trade-off between cost and time-to-recover
+
+- **Backup & Restore**: Backup data and restore to new infrastructure (Least cost and highest time to recover)
+  - Recovery time: Hours
+
+- **Pilot Light**: data is replicated to another region, but minimal services running 
+  - Recovery time: 10s of minutes
+
+- **Warm standby**: all data is replicated, and services on scaled down infrastructure, ready to scale up into production load
+  - Recovery time: minutes
+  - For **Business Critical Services**
+
+- **Multi-site Active / active**: Full scale copy of your infrastructure in another region
+  - Real-time
+  - For **Mission Critical Services**
+
+> [!NOTE]
+> "Another region" is repeated multiple times
