@@ -12,9 +12,9 @@ tags:
 
 ## Progress
 
-- Current Course Timestamp: 58:00
+- Current Course Timestamp: 1:04:00
 - Current Course Progress Percent: 12%
-- Topics completed: 1 / 18
+- Topics completed: 2 / 18
 - Have not reviewed:
   - Microsoft Learn
   - Azure specific services in depth
@@ -38,6 +38,7 @@ tags:
 ## Subchapters
 
 - [cloud-basics](cloud-basics.md)
+- [cloud-evolution-of-computing](cloud-evolution-of-computing.md)
 
 ## Misc
 
