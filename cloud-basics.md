@@ -49,6 +49,9 @@ tags:
 - Scalable
 - Elastic: Automatic scaling
 
+> [!IMPORTANT]
+> Inherently and easily global and almost always more secure and reliable
+
 ## Azure's Deployment Models
 
 - Public cloud:
@@ -70,7 +73,7 @@ tags:
   
 ## Total Cost of Ownership (TCO)
 
-- There is a ~75% reduction in cost when moving to cloud from on-prem
+- There is a ~75% reduction in cost when moving from on-prem to cloud 
 
 ## CAPEX vs. OPEX
 
@@ -87,3 +90,23 @@ tags:
     - compute usage
     - storage usage
   - Try a product *without investing in equipment*
+
+## Architect Roles
+
+### Solutions Architect
+
+A role in a technical organization that architects a technical solution using multiple systems via researching, documentation, and experimentation
+
+### Cloud Architect
+
+A solutions architect that is focused solely on architecting technical solutions using cloud services
+
+- Availability - Your ability to ensure a service remains available
+- Scalability
+- Elasticity
+- Fault Tolerance
+- Disaster recovery - Your ability to recover from a failure
+
+Such an architect has to consider:
+  - Security: How secure is this solution
+  - Cost: How much is this going to cost
