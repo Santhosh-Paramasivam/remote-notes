@@ -27,7 +27,7 @@ tags:
 
 ## Subchapters
 
-- [](cloud-basics.md)
+- [cloud-basics](cloud-basics.md)
 
 ## Misc
 
