@@ -25,6 +25,10 @@ tags:
 - Understanding how pricing works in Azure including subscriptions and cost management tools
 - Learning about the tools available for managing Azure resources e.g., Azure Portal
 
+## Subchapters
+
+- [](cloud-basics.md)
+
 ## Misc
 
 - Take free and paid sample exams on WhizLabs
