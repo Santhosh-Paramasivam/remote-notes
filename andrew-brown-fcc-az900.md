@@ -10,7 +10,16 @@ tags:
 
 # Andrew Brown FreeCodeCamp
 
-## Current Timestamp: 24:30
+## Progress
+
+- Current Timestamp: 53:00
+- Current Progress Percent: 12%
+- Have not reviewed:
+  - Microsoft Learn
+  - Azure specific services in depth
+  - Free practice tests
+  - Paid practice tests
+  - Application process and filing an application for exam
 
 ## Resources
 
