@@ -85,3 +85,11 @@ tags:
 ### SQL Server Stretch Database
 
 - Dynamically stretch warm and cold transactional data from Microsoft SQL Server 2016 to Microsoft Azure
+
+## Fault Tolerant Services
+
+### Azure Traffic Manager
+
+- DNS-based traffic balancer
+
+- To fail-over from a failing primary system to a stand-by secondary system

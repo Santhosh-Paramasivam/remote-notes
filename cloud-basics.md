@@ -144,3 +144,15 @@ Such an architect has to consider:
 - Utilizes specific tools specified in [azure-services](azure-services.md)
   - Azure VM Scale Sets
   - SQL Server 2016 to Microsoft Azure
+
+### Highly Fault Tolerant
+
+- Avoiding failure, and where unavoidable, avoiding large scale system failure
+
+- If a fault does occur, it must be individual and isolated
+
+- **Fail-overs** is when you have a plan to shift traffic to a redundant system in case the primary system fails
+
+- A common example: Having multiple exact copies of your database where all ongoing changes are synced. The secondary system is *not in-use* until a fail over occurs and it becomes the primary database
+
+- Azure Traffic Manager
