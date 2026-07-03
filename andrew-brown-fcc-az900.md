@@ -12,9 +12,7 @@ tags:
 
 ## Progress
 
-- Current Course Timestamp: 1:44:43 (1:19:33)
-- Incomplete Sections:
-  - 1:19:33 - 1:44:43
+- Current Course Timestamp: 1:44:43
 - Current Course Progress Percent: 15%
 - Topics completed: 3 / 18
 - Have not reviewed:
@@ -42,7 +40,7 @@ tags:
 - [x] [cloud-basics](cloud-basics.md)
 - [x] [cloud-evolution-of-computing](cloud-evolution-of-computing.md)
 - [x] [cloud-global-infrastructure](cloud-global-infrastructure.md)
-- [ ] [azure-hands-on-getting-started](azure-hands-on-getting-started.md)
+- [ ] [azure-compute-services](azure-compute-services.md)
 
 ## Misc
 
