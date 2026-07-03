@@ -23,7 +23,10 @@ tags:
 - No isolation between executing applications; multiple apps can result in conflicts in resource sharing
 
 > [!IMPORTANT]
-- You have a guarantee of *security, privacy and full utility of underlying resources*
+- You have a guarantee of **security, privacy and full utility of underlying resources*
+
+> [!NOTE]
+> Only if managed well, does a dedicated machine have any guarantee of security, and the same goes for cloud although cloud has better default inexpensive security
 
 ## Virtual Machines
 
@@ -42,7 +45,7 @@ tags:
 - Efficient resource utilization, lower cost
 - Each app executes in its own environment
 - Each app emulates a different OS that's suitable for the app, whilst still sharing the underlying OS, which makes them efficient
-- Very good isolation between
+- Very good isolation between apps
 
 ## Functions (FaaS)
 
@@ -51,4 +54,3 @@ tags:
 - User simply uploads code and data
 - Very very cost effective
 - **Cold Starts** are a side-effect of this setup, as the program needs to be loaded in before it runs
-

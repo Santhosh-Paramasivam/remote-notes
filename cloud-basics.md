@@ -112,7 +112,7 @@ Such an architect has to consider:
   - Security: How secure is this solution
   - Cost: How much is this going to cost
 
-## Key Performance Indications
+## Key Performance Indicators
 
 ### High Availability
 
@@ -139,7 +139,7 @@ Such an architect has to consider:
   - *Scaling In*: Removing more servers of the same size
 
 > [!NOTE]
-> Vertical scaling is generally hard for traditional architecture so this is typically used with horizontal scaling only
+> Vertical scaling is generally harder to maintain high elasticity for so this is typically used with horizontal scaling only
 
 - Utilizes specific tools specified in [azure-services](azure-services.md)
   - Azure VM Scale Sets
