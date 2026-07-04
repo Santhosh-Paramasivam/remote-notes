@@ -91,11 +91,63 @@ tags:
 - Installs a small instrumentation package in your application that monitors the app and sends telemetry to Azure
 - When you want App Metrics
 
+#### Scale-In Policy 
+
+- Determines which VM is to be removed to decrease the capacity of the Scale Set
+
+##### Default
+
+- Delete the VM with the highest instance ID 
+
+- Balanced acrosss AZs and FDs
+
+##### Newest VM
+
+- Delete the newest created VM
+
+- Balanced across Availability Zones (AZs)
+
+##### Oldest VM
+
+- Delete the oldest created VM
+
+- Balanced across Availability Zones (AZs)
+
+#### Update Policy
+
+- Automatic 
+- Manual 
+- Rolling (?)
+
+#### Health Monitoring
+
+- Determines if VMs in the Scale Set is healthy or not 
+
+- 2 modes of health monitoring:
+  - Application health extension: Pings an HTTP endpoint and expect a 200 status
+  - Load Balancer Probe: Needs a load balancer which is recommended for VMSS, based on TCP, UDP, or HTTP requests
+
+- There is also an automatic repair policy for deleting "unhealgthy" and replacing them with healthy instances
+
 #### Azure Diagnostic Extension
 
 - An agent that runs inside a VM instance
 
 - It monitors and saves more performance metrics to Azure storage
+
+### Azure Virtual Desktop 
+
+- Desktop and app virtualization service
+
+- Enable *secure and productive remote work* on any device
+
+- *Reduce the costs of licensing and infrastructure*, only pay for what you use in terms of Microsoft 365 and Windows usage
+
+- *Protect against outages* to stay productive, by leveraging built-in Azure Site Recovery and Azure Backup technologies
+
+- *Simplify IT Management*, no need to manage power networking and desktop infrastructure 
+
+- *Keep application and user data secure*, easily apply the right access controls to users and devices
 
 #### Load Balancer
 
@@ -108,3 +160,4 @@ tags:
 ### Compute Fleet
 
 - For high-performance and distributed computing environments
+
