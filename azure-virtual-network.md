@@ -96,3 +96,54 @@ tags:
   - Allows you to use your own custom domains instead of the Azure provided domains 
     - Many azure services use FQDN to identify services on the network
       - e.g. Azure Storage Accounts FQDN
+
+- You *cannot by DNS names in Azure DNS*, Azure DNS simply manages the domain
+
+### Virtual Network Gateways
+
+#### Virtual Private Networks 
+
+- "A VPN extends a private network across a public network and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the network"
+
+#### What is a Virtual Network Gateway 
+
+- The software VPN device for an Azure virtual network
+
+- When you deploy a Virtual Network Gateway, it will deploy two or more specialized VMs in a specific subnet you need to create called a "gateway subnet"
+- These deployed VMs contain routing tables and run specific gateway services
+
+- *Gateway Type*:
+  - VPN
+  - **ExpressRoute**
+  
+### Azure ExpressRoute 
+
+- Creates a *private connection* from on-premises and Azure datacenters
+
+- ExpressRoute connections don't go over the public internet:
+  - More reliability
+  - Faster speeds 
+  - Consistent latencies
+  - Higher security
+
+- Connectivity can be from (on-premises):
+  - Any-to-any (IP VPN network)
+  - point-to-point Ethernet network 
+  - virtual cross-connection 
+  - through a connectivity provider at a colocation facility
+
+- Could be used for:
+  - **Microsoft (Public) Peering**: Office 365
+  - **Azure Private Peering**
+
+- **ExpressRoute Direct**: Greater bandwidth connections, from 50 Mbps to 10 Gbps
+
+### Private Links 
+
+- Azure Private Links allows you to *establish private and secure connections* between Azure resources so traffic remains within the Azure Network
+
+- Most Azure services are automatically configured to be able to use Private Link
+
+- **Azure Private Endpoint** is an endpoint within a vNet that allows traffic to a Private Link
+
+- **Private Link Services** allows you to use Private Link for a connection to a vNet or a vNet Subnet. You need an **Azure Standard Internal Load Balancer**, and associate it with the Link Service
