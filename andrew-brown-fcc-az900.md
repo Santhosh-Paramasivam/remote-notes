@@ -12,9 +12,9 @@ tags:
 
 ## Progress
 
-- Current Course Timestamp: 1:44:43
-- Current Course Progress Percent: 15%
-- Topics completed: 3 / 18
+- Current Course Timestamp: 2:34:45
+- Current Course Progress Percent: 30%
+- Topics completed: 8 / 18
 - Have not reviewed:
   - Microsoft Learn
   - Azure specific services in depth
@@ -40,8 +40,19 @@ tags:
 - [x] [cloud-basics](cloud-basics.md)
 - [x] [cloud-evolution-of-computing](cloud-evolution-of-computing.md)
 - [x] [cloud-global-infrastructure](cloud-global-infrastructure.md)
-- [ ] [azure-compute-services](azure-compute-services.md)
+- [x] [azure-compute-services](azure-compute-services.md)
+- [x] [azure-container-instances](azure-container-instances.md) 
 
 ## Misc
 
 - Take free and paid sample exams on WhizLabs
+
+### Learning Recommendations 
+
+- cidrmask.net
+
+- networking is where most people fail
+
+- Ingress and egress law, why not redundancy between china and germany?
+
+- Do not complete Azure AI before Azure ML
