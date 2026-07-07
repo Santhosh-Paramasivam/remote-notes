@@ -20,6 +20,11 @@ tags:
   - [Storage Comparison](#storage-comparison)
     - [Storage Accounts](#storage-accounts)
   - [Core Storage Services](#core-storage-services)
+  - [Performance Tiers](#performance-tiers)
+    - [Premium](#premium)
+    - [Standard](#standard)
+  - [Access Tiers](#access-tiers)
+    - [Hot](#hot)
 
 # Azure Storage Services
 
@@ -91,3 +96,48 @@ tags:
 - **Azure Tables**
 
 - **Azure Disks**: Block-level storage volumes for Azure VMs
+
+## Performance Tiers
+
+### Premium
+
+- Higher IOPS (Input / Output Operations Per Second)  
+
+- Stored on SSDs
+
+- Optimized for low latency
+
+- Higher throughput
+
+> [!NOTE]
+> In an SSD
+> No moving parts and data is distributed randomly
+
+- Use cases:
+  - Interactive workloads
+  - Analytics
+  - AI or ML
+  - Data Transformation
+
+### Standard 
+
+- Stored on HDDs
+
+- Varied performance based on access tier (Hot, Cold, Archive)
+
+- Use cases:
+    - Backup and disaster recovery
+    - Media content
+    - Bulk data processing
+
+> [!NOTE]
+> In an HDD
+> Very good at writing or reading large amounts of data that is close together
+
+## Access Tiers
+
+### Hot  
+
+- Data that's accessed frequently
+  
+- Highest storage cost, lowest access cost
