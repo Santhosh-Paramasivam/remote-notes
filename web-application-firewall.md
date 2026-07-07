@@ -7,6 +7,8 @@ tags:
   - #cloud-components
 ---
 
+- [Web Application Firewall](#web-application-firewall)
+
 # Web Application Firewall
 
 - Monitors, filters and blocks malicious HTTP/s traffic

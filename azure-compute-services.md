@@ -7,6 +7,28 @@ tags:
   - #cloud-components
 ---
 
+- [Azure Compute Services](#azure-compute-services)
+  - [Common Compute Services](#common-compute-services)
+    - [Azure Virtual machines](#azure-virtual-machines)
+    - [Azure Container Instances](#azure-container-instances)
+    - [Azure Kubernetes Service (AKS)](#azure-kubernetes-service-aks)
+    - [Azure Service Fabric](#azure-service-fabric)
+    - [Azure Functions](#azure-functions)
+    - [Azure Batch](#azure-batch)
+  - [Azure VMs](#azure-vms)
+    - [Virtual Machine Scale Sets](#virtual-machine-scale-sets)
+      - [App Insights](#app-insights)
+      - [Scale-In Policy](#scale-in-policy)
+        - [Default](#default)
+        - [Newest VM](#newest-vm)
+        - [Oldest VM](#oldest-vm)
+      - [Update Policy](#update-policy)
+      - [Health Monitoring](#health-monitoring)
+      - [Azure Diagnostic Extension](#azure-diagnostic-extension)
+    - [Azure Virtual Desktop](#azure-virtual-desktop)
+      - [Load Balancer](#load-balancer)
+    - [Compute Fleet](#compute-fleet)
+
 # Azure Compute Services
 
 ## Common Compute Services

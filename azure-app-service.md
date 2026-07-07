@@ -7,6 +7,17 @@ tags:
   - #cloud-components
 ---
 
+- [Azure App Service](#azure-app-service)
+  - [Managed Infrastructure](#managed-infrastructure)
+  - [Simplified Integrations](#simplified-integrations)
+  - [Azure App Service Plans](#azure-app-service-plans)
+  - [Runtime Environment](#runtime-environment)
+  - [Deployment Slots](#deployment-slots)
+  - [App Service Environment (ASE)](#app-service-environment-ase)
+  - [Azure App Service Plan](#azure-app-service-plan)
+    - [Shared Tiers](#shared-tiers)
+    - [Dedicated Tiers](#dedicated-tiers)
+
 # Azure App Service
 
 - PaaS

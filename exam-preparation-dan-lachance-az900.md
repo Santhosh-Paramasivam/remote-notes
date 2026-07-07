@@ -7,6 +7,11 @@ tags:
   - #cloud-components
 ---
 
+- [Microsoft Azure Fundamentals: AZ-900 Exam Preparation](#microsoft-azure-fundamentals-az-900-exam-preparation)
+  - [Knowledge expected](#knowledge-expected)
+  - [AZ-900 Exam Domains](#az-900-exam-domains)
+  - [Advice](#advice)
+
 # Microsoft Azure Fundamentals: AZ-900 Exam Preparation
 
 - By Dan Lachance

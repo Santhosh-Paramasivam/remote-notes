@@ -6,6 +6,20 @@ tags:
   - #azure
   - #cloud-components
 ---
+
+- [Cloud Global Infrastructure](#cloud-global-infrastructure)
+  - [Regions and Geographies](#regions-and-geographies)
+    - [Availability Zone](#availability-zone)
+    - [Region](#region)
+    - [Geography](#geography)
+    - [Paired Regions](#paired-regions)
+    - [Regions' Service Capabilities](#regions-service-capabilities)
+    - [Service Availability](#service-availability)
+    - [Special Region](#special-region)
+  - [Availability zones](#availability-zones)
+    - [AZ Supported Regions](#az-supported-regions)
+    - [Fault and Update domains](#fault-and-update-domains)
+
 # Cloud Global Infrastructure
 
 ## Regions and Geographies

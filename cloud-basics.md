@@ -7,6 +7,28 @@ tags:
   - #cloud-components
 ---
 
+- [Cloud Basics](#cloud-basics)
+  - [Reason](#reason)
+  - [Evolution](#evolution)
+  - [Common Cloud Services](#common-cloud-services)
+    - [IaaS](#iaas)
+  - [Benefits of Cloud Services](#benefits-of-cloud-services)
+  - [Azure's Deployment Models](#azures-deployment-models)
+  - [Total Cost of Ownership (TCO)](#total-cost-of-ownership-tco)
+  - [CAPEX vs. OPEX](#capex-vs-opex)
+  - [Architect Roles](#architect-roles)
+    - [Solutions Architect](#solutions-architect)
+    - [Cloud Architect](#cloud-architect)
+  - [Key Performance Indicators](#key-performance-indicators)
+    - [High Availability](#high-availability)
+    - [High Scalability](#high-scalability)
+    - [High Elasticity](#high-elasticity)
+    - [Highly Fault Tolerant](#highly-fault-tolerant)
+  - [Business Continuity Plan (BCP)](#business-continuity-plan-bcp)
+    - [Recovery Point Objective (RPO)](#recovery-point-objective-rpo)
+    - [Recovery Time Objective (RTO)](#recovery-time-objective-rto)
+    - [Disaster Recovery Options](#disaster-recovery-options)
+
 # Cloud Basics
 
 ## Reason

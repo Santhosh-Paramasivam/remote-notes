@@ -6,6 +6,7 @@ tags:
   - #cloud
   - #cloud-components
 ---
+
 - [Azure Storage Services](#azure-storage-services)
   - [Commonly used services](#commonly-used-services)
     - [Azure Blob Storage](#azure-blob-storage)

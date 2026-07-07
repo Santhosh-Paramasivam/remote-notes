@@ -7,6 +7,25 @@ tags:
   - #cloud-components
 ---
 
+- [Azure Services](#azure-services)
+  - [Azure Monitor](#azure-monitor)
+  - [Azure Entra](#azure-entra)
+    - [Azure Entra ID](#azure-entra-id)
+      - [Azure Entra External ID](#azure-entra-external-id)
+  - [Azure Front Door](#azure-front-door)
+  - [Azure Databases](#azure-databases)
+    - [CosmosDB](#cosmosdb)
+    - [Azure SQL Database](#azure-sql-database)
+    - [SQL Server Managed Database](#sql-server-managed-database)
+  - [Azure API Management](#azure-api-management)
+    - [Azure API Gateway](#azure-api-gateway)
+  - [Application Gateway Ingress Controller (AGIC)](#application-gateway-ingress-controller-agic)
+  - [Elastic Services](#elastic-services)
+    - [Azure VM Scale Sets](#azure-vm-scale-sets)
+    - [SQL Server Stretch Database](#sql-server-stretch-database)
+  - [Fault Tolerant Services](#fault-tolerant-services)
+    - [Azure Traffic Manager](#azure-traffic-manager)
+
 # Azure Services
 
 ## Azure Monitor

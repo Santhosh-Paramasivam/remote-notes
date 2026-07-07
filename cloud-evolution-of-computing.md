@@ -7,6 +7,12 @@ tags:
   - #cloud-components
 ---
 
+- [Evolution of Computing](#evolution-of-computing)
+  - [Dedicated](#dedicated)
+  - [Virtual Machines](#virtual-machines)
+  - [Containers](#containers)
+  - [Functions (FaaS)](#functions-faas)
+
 # Evolution of Computing
 
 ## Dedicated

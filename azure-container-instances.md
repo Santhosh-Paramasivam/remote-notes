@@ -8,6 +8,13 @@ tags:
   - #az-900
 ---
 
+- [Azure Container Instances](#azure-container-instances)
+  - [Container Groups](#container-groups)
+  - [Container Restart Policies](#container-restart-policies)
+  - [Container Environment Variables](#container-environment-variables)
+  - [Container Persistent Storage](#container-persistent-storage)
+  - [Follow-along](#follow-along)
+
 # Azure Container Instances
 
 - Allows you to launch containers in a fully managed PaaS environment
