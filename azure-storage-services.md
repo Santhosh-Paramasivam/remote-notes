@@ -43,6 +43,9 @@ tags:
 
 - Used where a shared resource might be needed or if those protocols are useful for services or applications
 
+> [!NOTE]
+> The services with an * before them are **not** storage services, but have storage in the name prompting me to put them in this list
+
 ### * Azure Queue Storage
 
 - *Messaging queue*
