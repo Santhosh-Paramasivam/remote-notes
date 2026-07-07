@@ -36,6 +36,7 @@ tags:
       - [Geo-redundant storage (GRS)](#geo-redundant-storage-grs)
       - [Geo-zone-redundant storage (GZRS)](#geo-zone-redundant-storage-gzrs)
     - [Redundancy with Read Access](#redundancy-with-read-access)
+  - [Azure Blob](#azure-blob)
 
 # Azure Storage Services
 
@@ -251,8 +252,16 @@ tags:
 
 ### Redundancy with Read Access 
 
+- Exact same as GRS and GZRS except the *secondary region is fully synced with the primary*, as in, the data transfer is *synchronous between regions too*
+
 - Read-access geo-redundant storage (RA-GRS)
 
-- Read-accesss geo-zone-redundant storage (RA-GZRS)
+- Read-access geo-zone-redundant storage (RA-GZRS)
 
 - Used for **Read Replicas**
+
+## Azure Blob
+
+- Blob storage is a **object-store**
+
+- [aws-object-storage](https://aws.amazon.com/what-is/object-storage/)
