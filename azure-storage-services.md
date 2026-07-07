@@ -1,8 +1,22 @@
 ---
 id: azure-storage-services
 aliases: []
-tags: []
+tags:
+  - #azure
+  - #cloud
+  - #cloud-components
 ---
+- [Azure Storage Services](#azure-storage-services)
+  - [Commonly used services](#commonly-used-services)
+    - [Azure Blob Storage](#azure-blob-storage)
+    - [Azure Disk Storage](#azure-disk-storage)
+    - [Azure File Storage](#azure-file-storage)
+    - [\* Azure Queue Storage](#-azure-queue-storage)
+    - [\* Azure Table Storage](#-azure-table-storage)
+    - [Azure Data Box / Azure Databox Heavy](#azure-data-box--azure-databox-heavy)
+    - [Azure Archive Storage](#azure-archive-storage)
+    - [Azure Data Lake Storage](#azure-data-lake-storage)
+  - [Storage Accounts](#storage-accounts)
 
 # Azure Storage Services
 
