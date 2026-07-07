@@ -17,7 +17,9 @@ tags:
     - [Azure Data Box / Azure Databox Heavy](#azure-data-box--azure-databox-heavy)
     - [Azure Archive Storage](#azure-archive-storage)
     - [Azure Data Lake Storage](#azure-data-lake-storage)
-  - [Storage Accounts](#storage-accounts)
+  - [Storage Comparison](#storage-comparison)
+    - [Storage Accounts](#storage-accounts)
+  - [Core Storage Services](#core-storage-services)
 
 # Azure Storage Services
 
@@ -72,6 +74,20 @@ tags:
 
 - A centralized repository that allows you to store all your structured and unstructured data at any scale
 
-## Storage Accounts
+## Storage Comparison
+
+### Storage Accounts
 
 ![storage-accounts-comparison](images/2026-07-06-230319_hyprshot.png) 
+
+## Core Storage Services
+
+- **Azure Blob**: Also includes support for big data analytics through Data Lake Storage Gen2
+
+- **Azure Files**: Managed file shares
+
+- **Azure Queues**
+
+- **Azure Tables**
+
+- **Azure Disks**: Block-level storage volumes for Azure VMs
