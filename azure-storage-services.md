@@ -23,8 +23,19 @@ tags:
   - [Performance Tiers](#performance-tiers)
     - [Premium](#premium)
     - [Standard](#standard)
-  - [Access Tiers](#access-tiers)
+  - [Access Tiers (Blob Storage)](#access-tiers-blob-storage)
     - [Hot](#hot)
+    - [Cool](#cool)
+    - [Archive](#archive)
+    - [Tiering](#tiering)
+  - [Replication and Data Redundancy](#replication-and-data-redundancy)
+    - [Primary Region Redundancy](#primary-region-redundancy)
+      - [Locally Redundant Storage (LRS)](#locally-redundant-storage-lrs)
+      - [Zone-redundant storage (ZRS)](#zone-redundant-storage-zrs)
+    - [Secondary Region Redundancy](#secondary-region-redundancy)
+      - [Geo-redundant storage (GRS)](#geo-redundant-storage-grs)
+      - [Geo-zone-redundant storage (GZRS)](#geo-zone-redundant-storage-gzrs)
+    - [Redundancy with Read Access](#redundancy-with-read-access)
 
 # Azure Storage Services
 
@@ -134,10 +145,114 @@ tags:
 > In an HDD
 > Very good at writing or reading large amounts of data that is close together
 
-## Access Tiers
+## Access Tiers (Blob Storage)
 
 ### Hot  
 
 - Data that's accessed frequently
   
 - Highest storage cost, lowest access cost
+
+### Cool 
+
+- Data that's infrequently accessed and stored for at least 30 days
+
+- Lower storage cost, higher access cost
+
+- Must be stored for at least 30 days to avoid *early deletion penalties*
+
+- Use cases:
+  - Short-term backup and disaster recovery datasets
+  - Older media content not frequently accessed but still expected to be immediately available
+  - Large datasets that need to be stored cost effectively while more data is being gathered for future processing
+
+### Archive
+
+- Data that's rarely accessed and stored for at least 180 days
+
+- Must be stored for at least 180 days to avoid *early deletion penalties*
+
+- Lowest storage cost, highest access cost 
+
+- Use cases:
+  - Long-term backup, secondary backup, and archival datasets
+  - Original raw data that must be preserved, even after it has been processed into final usable from
+  - Compliance and archival that is stored but rarely ever accessed
+
+### Tiering
+
+- Account-level tiering: If an access isn't explicitly associated with a blob, then the access tier of the Storage Account is utilized
+
+- Blob-level Tiering: You can set the tier of any blob. 
+
+- Changing tiers happens instantly with the *exception of moving out of archive* which can take hours, and is called **Rehydration**
+
+- Blob lifecycle Management: Rule-based policies to transition data to other tiers
+
+## Replication and Data Redundancy
+
+- When a Storage Account is created, you need to choose a replication type
+
+- Replication stores data from:
+  - Transient hardware failures
+  - Planned events 
+  - Network or power outages 
+  - Massive natural disasters
+
+### Primary Region Redundancy 
+
+- Data is replicated 3 times in the primary region
+
+- Used for disaster recovery and failover
+
+####  Locally Redundant Storage (LRS) 
+
+- *Copies data synchronously* within data centers
+
+- Redundancy within availability zones
+
+- Durability of 99.999999999 (11 nines durability)
+
+- Cheapest possible redundancy
+
+#### Zone-redundant storage (ZRS)
+
+- *Copies data synchronously* across 3 availability zones
+
+- Durability of 99.9999999999 (12 nines durability)
+
+- Redundancy across availability zones
+
+### Secondary Region Redundancy
+
+- Replicate to a secondary region in case of primary regional disaster 
+
+- The *secondary region is determined* based on the primary's pair region. You cannot manually select a different region.
+
+- Secondary region isn't available for read or write access (except in event of failover)
+
+- Used for disaster recovery and failover
+
+#### Geo-redundant storage (GRS)
+
+- Copies data *synchronously* in primary region (LRS)
+
+- Copies data *asynchronously* to another region
+
+- 99.99999999999999% (16 9's) of durability
+
+####  Geo-zone-redundant storage (GZRS)
+
+- Copies data *synchronously* in across 3 AZs in primary region (ZRS)
+
+- Copies data *asynchronously* to another region (not necessarily LRS or ZRS there)
+
+- 99.99999999999999% (16 9's) of durability
+
+### Redundancy with Read Access 
+
+- Read-access geo-redundant storage (RA-GRS)
+
+- Read-accesss geo-zone-redundant storage (RA-GZRS)
+
+- Used for **Read Replicas**
