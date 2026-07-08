@@ -37,6 +37,9 @@ tags:
       - [Geo-zone-redundant storage (GZRS)](#geo-zone-redundant-storage-gzrs)
     - [Redundancy with Read Access](#redundancy-with-read-access)
   - [Azure Blob](#azure-blob)
+    - [Object Storage Principles](#object-storage-principles)
+    - [Blob Hierarchy](#blob-hierarchy)
+    - [Blob Types](#blob-types)
 
 # Azure Storage Services
 
@@ -96,6 +99,10 @@ tags:
 ### Storage Accounts
 
 ![storage-accounts-comparison](images/2026-07-06-230319_hyprshot.png) 
+
+- [azure-storage-account-overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+
+- Provides a unique namespace for storage objects
 
 ## Core Storage Services
 
@@ -265,3 +272,44 @@ tags:
 - Blob storage is a **object-store**
 
 - [aws-object-storage](https://aws.amazon.com/what-is/object-storage/)
+
+### Object Storage Principles
+
+- *No folders* to avoid nesting/pathing inefficiency
+
+- *Flat namespace*, "folders" are just metadata in the object 
+
+- A blob or object consists of the actual data, metadata (usually key-value pairs), name (globally unique)
+
+- Files are stored in *different data formats in the same place*, a particular object can have any type
+
+- *All files have random access*, so incredibly fast and same performance even if the system is scaled up, allowing virtually unlimited scalability
+
+- Used for *unstructured data such as images, videos and files, and for archival purposes* (even for data that isn't actively stored on Blob Storage)
+
+- Globally unique identifier to identify each object uniquely
+
+### Blob Hierarchy
+
+- **Storage Account**
+  - **Container1**
+    - Blob1 -> Actual data being stored
+    - Blob2
+  - Container2
+    - Blob3
+    - Blob4
+
+### Blob Types
+
+- **Block blobs**:
+  - Store text and binary data
+  - Made up of blocks of data that are managed individually, at once, either uploaded or downloaded but not repeatedly appended to or modified
+  - Store up to about 4.75 TB of data
+
+- **Append blobs**:
+  - Optimized (only) for append operations 
+  - Ideal for scenarios such as logging data from virtual machine 
+
+- **Page Blobs**:
+  - Store random access files up to 8 TB in size 
+  - Store virtual hard drive files, and serve as disks for Azure VMs
