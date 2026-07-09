@@ -40,7 +40,6 @@ tags:
 - A virtual machine requires other resources that are billed separately such as:
   - vNET, vNIC, IPs, OS Disk and other disks
 
-
 ### Azure Container Instances
 
 - **Docker as a Service**
