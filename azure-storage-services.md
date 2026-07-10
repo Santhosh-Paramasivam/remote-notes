@@ -158,7 +158,7 @@ tags:
 ### Hot  
 
 - Data that's accessed frequently
-  
+ 
 - Highest storage cost, lowest access cost
 
 ### Cool 
