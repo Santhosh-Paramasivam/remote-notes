@@ -28,9 +28,14 @@ tags:
 
 # Azure Monitoring 
 
+## Sources
+
+- [az-900 freecodecamp 8 hour course](https://www.youtube.com/watch?v=5abffC-K40c)
+- [azure-monitor-docs](https://docs.azure.cn/en-us/azure-monitor/)
+
 ## Azure Monitor 
 
-- A comprehensive solution for *collecting, anaylyzing and acting on telemetry*
+- A unified observability service for *collecting, analyzing and acting on telemetry*
 
 - From cloud *and* on-premises environment 
 
