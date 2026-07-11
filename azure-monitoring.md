@@ -7,6 +7,25 @@ tags:
   - #cloud-components
 ---
 
+- [Azure Monitoring](#azure-monitoring)
+  - [Azure Monitor](#azure-monitor)
+  - [3 Pillars of Observability](#3-pillars-of-observability)
+    - [Metrics](#metrics)
+    - [Logs](#logs)
+    - [Traces](#traces)
+  - [Anatomy of Azure Monitor](#anatomy-of-azure-monitor)
+    - [Sources](#sources)
+    - [Data Stores](#data-stores)
+    - [Azure Monitor Functions](#azure-monitor-functions)
+      - [Insights](#insights)
+        - [Application Insights](#application-insights)
+      - [Visualize](#visualize)
+      - [Analyze](#analyze)
+        - [Log Analytics](#log-analytics)
+      - [Respond](#respond)
+        - [Azure Alerts](#azure-alerts)
+      - [Integrate](#integrate)
+
 # Azure Monitoring 
 
 ## Azure Monitor 
