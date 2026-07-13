@@ -8,13 +8,14 @@ tags:
 ---
 
 - [Azure Monitoring](#azure-monitoring)
+  - [Sources](#sources)
   - [Azure Monitor](#azure-monitor)
   - [3 Pillars of Observability](#3-pillars-of-observability)
     - [Metrics](#metrics)
     - [Logs](#logs)
     - [Traces](#traces)
   - [Anatomy of Azure Monitor](#anatomy-of-azure-monitor)
-    - [Sources](#sources)
+    - [Sources](#sources-1)
     - [Data Stores](#data-stores)
     - [Azure Monitor Functions](#azure-monitor-functions)
       - [Insights](#insights)
@@ -23,6 +24,7 @@ tags:
       - [Analyze](#analyze)
         - [Log Analytics](#log-analytics)
       - [Respond](#respond)
+        - [Autoscale](#autoscale)
         - [Azure Alerts](#azure-alerts)
       - [Integrate](#integrate)
 
@@ -61,6 +63,8 @@ tags:
 ### Logs 
 
 - A text file where each line contains event data about what happenend at a certain time
+- Includes:
+  - Audit logs
 
 ### Traces 
 
@@ -86,11 +90,15 @@ tags:
 
 #### Insights
 
+- [list-of-all-azure-insights](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/insights-overview)
+
 - Container 
 - VMs 
 - Monitoring Solutions
 
 ##### Application Insights
+
+- Based on OpenTelemetry, providing a vendor-neutral approach
 
 - **Application Performance Management (APM) service**
 
@@ -159,6 +167,7 @@ tags:
 ##### Log Analytics
 
 - Edit and run log queries
+- Log and metrics
 - Own query langauge called KQL
 
 - Log Analytics Workspaces:
@@ -167,7 +176,19 @@ tags:
 
 #### Respond 
 
-- Autoscale
+##### Autoscale
+
+- [azure-monitor-autoscale-docs](https://docs.azure.cn/en-us/azure-monitor/autoscale/autoscale-overview)
+
+- Automatically scale when metrics reach a certain threshold
+
+- You can scale your application based on metrics like CPU usage, queue length, and available memory.
+
+- Rules can be metrics based or time-based
+
+- Scales out if *any* of the rules are met, scales in only if *all* rules are met
+  
+- Can additionally send notifications and trigger webhooks / azure functions
 
 ##### Azure Alerts 
 
