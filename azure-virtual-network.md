@@ -43,7 +43,7 @@ tags:
 
 - **ExpressRoute**: A very fast 50 Mbps-10Gbps connection between on-premise to vNet 
 
-- **Virtual WAN**: A centralized network to route different netword connections
+- **Virtual WAN**: A centralized network to route different network connections
 
 - **Virtual Network Gateway**: A site-to-site VPN connection between a vNet and local networks 
 
