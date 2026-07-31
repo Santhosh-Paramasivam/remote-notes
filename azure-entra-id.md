@@ -87,4 +87,27 @@ Azure AD External Identities -> Microsoft Entra External ID
 
 - A subdivision within an Active Directory into which you can place users, groups, computers, and other organizational units 
 
-#### 
+#### Directory Service 
+
+- A directory service such as Active Directory Domain Services (AD DS), provides the methods for storing directory data and making this data available to network users and administrators.
+
+- A directory service runs on a Domain Controller
+
+### Azure Active Directory Domain Services (AD DS)
+
+- Azure provides its own Domain Controllers automatically
+
+- However, during lift-and-shift migration, Azure AD does not provide certai domain services 
+
+- AD DS provides a *managed domain service* such as:
+  - Domain joins 
+  - Group policies 
+  - Lightweight directory access protocol (LDAP)
+  - Kerberos / NTLM authentication
+
+- Without the need to deploy, manage and patch domain controllers (DCs) in the cloud
+
+### Single Sign-On (SSO) in Entra ID
+
+- A feature that allows users to authenticate once with Azure AD, and access multiple services without having to login repeatedly
+
