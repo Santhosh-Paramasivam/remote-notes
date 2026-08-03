@@ -65,7 +65,7 @@ az deployment group create \
 
 Basic template without any resources:
 
-```bash
+```json
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
@@ -74,5 +74,65 @@ Basic template without any resources:
   "variables": {},
   "resources": [],
   "outputs": {}
+}
+```
+
+Basic template with only a storage account:
+
+> [!NOTE]
+> The storage account name must be between 3 and 24 characters and must be unique across all of Azure
+
+```json
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "functions": [],
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2025-01-01",
+      "name": "storageaccount1",
+      "tags": {
+        "displayName": "storageaccount1"
+      },
+      "location": "[resourceGroup().location]",
+      "kind": "StorageV2",
+      "sku": {
+        "name": "Standard_LRS"
+      }
+    }
+  ],
+  "outputs": {}
+}
+```
+
+```bash
+templateFile="azuredeploy.json"
+today=$(date +"%d-%b-%Y")
+DeploymentName="addstorage-"$today
+
+az deployment group create --name $DeploymentName --template-file $templateFile
+```
+
+## ARM Parameters
+
+```json
+"parameters": {
+  "<parameter-name>": {
+    "type": "<type-of-parameter-value>",
+    "defaultValue": "<default-value-of-parameter>",
+    "allowedValues": [
+      "<array-of-allowed-values>"
+    ],
+    "minValue": "<minimum-value-for-int>",
+    "maxValue": "<maximum-value-for-int>",
+    "minLength": "<minimum-length-for-string-or-array>",
+    "maxLength": "<maximum-length-for-string-or-array-parameters>",
+    "metadata": {
+      "description": "<description-of-the-parameter>"
+    }
+  }
 }
 ```
