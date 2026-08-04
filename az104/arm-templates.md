@@ -1,5 +1,5 @@
 ---
-id: azure-cloud-shell.md
+id: arm-templates.md
 aliases: []
 tags:
   - #azure
@@ -118,6 +118,11 @@ az deployment group create --name $DeploymentName --template-file $templateFile
 
 ## ARM Parameters
 
+> [!IMPORTANT]
+> Never hardcode passwords, secrets within the template or set default values
+
+Parameter syntax:
+
 ```json
 "parameters": {
   "<parameter-name>": {
@@ -136,3 +141,60 @@ az deployment group create --name $DeploymentName --template-file $templateFile
   }
 }
 ```
+
+Example of parameter template:
+
+```json
+"resources": [
+  {
+    "type": "Microsoft.Storage/storageAccounts",
+    "apiVersion": "2025-01-01",
+    "name": "learntemplatestorage123",
+    "location": "[resourceGroup().location]",
+    "sku": {
+      "name": "[parameters('storageAccountType')]"
+    },
+    "kind": "StorageV2",
+    "properties": {
+      "supportsHttpsTrafficOnly": true
+    }
+  }
+]
+```
+
+Passing in parameters via command-line: 
+
+```bash
+templateFile="azuredeploy.json"
+az deployment group create --name testdeployment1 --template-file $templateFile --parameters storageAccountType=Standard_LRS
+```
+
+## Outputs
+
+Syntax:
+
+```json
+"outputs": {
+  "<output-name>": {
+    "condition": "<boolean-value-whether-to-output-value>",
+    "type": "<type-of-output-value>",
+    "value": "<output-value-expression>",
+    "copy": {
+      "count": "<number-of-iterations>",
+      "input": "<values-for-the-variable>"
+    }
+  }
+}
+```
+
+Example:
+
+```json
+"outputs": {
+  "storageEndpoint": {
+    "type": "object",
+    "value": "[reference('learntemplatestorage123').primaryEndpoints]"
+  }
+}
+```
+
