@@ -79,3 +79,13 @@ tags:
 - Alternatives to
   - A site-to-site VPN between on-prem and Azure IaaS
   - Replica domain controllers from your local AD DS as virtual machines (VMs) in Azure
+
+## Practical
+
+### Initial configuration of Microsoft Entra ID
+
+- [init-config-entra-id](https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/)
+
+> [!NOTE]
+> P1, P2, Office 365 come with *Company branding*
+

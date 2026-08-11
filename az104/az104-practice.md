@@ -37,7 +37,7 @@ tags:
 - Locks, including delete locks
 
 - ARM Templates
-    - [arm-functions](https://learn.microsoft.com/en-us/training/modules/modify-azure-resource-manager-template-reuse/2-azure-resource-manager-functions)
+  - [arm-functions](https://learn.microsoft.com/en-us/training/modules/modify-azure-resource-manager-template-reuse/2-azure-resource-manager-functions)
 
 - Application security groups
   - [application-security-groups](https://learn.microsoft.com/en-us/azure/virtual-network/application-security-groups)
