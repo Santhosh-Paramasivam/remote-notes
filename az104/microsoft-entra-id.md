@@ -89,3 +89,21 @@ tags:
 > [!NOTE]
 > P1, P2, Office 365 come with *Company branding*
 
+### Adminstrative Unit 
+
+- A collection of Microsoft Entra ID objects that can be assigned admins 
+
+- Allows the segmentation of an Entra tenant into multiple groups, by departments for examples, allowing granular scope for the administrator privileges
+
+- The Entra version of Organizational Units (OUs)
+
+- Roles available for AUs:
+  - Authentication administrator
+  - Helpdesk administrator
+  - License administrator
+  - Password administrator
+  - User administrator
+
+### Misc 
+
+- There are dedicated User settings in Microsoft Entra ID

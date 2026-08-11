@@ -11,10 +11,10 @@ tags:
 
 ## Name Change!
 
-Azure AD Free -> Microsoft Entra ID Free 
-Azure AD Premium PO -> Microsoft Entra ID P1
-Azure AD Premium P2 -> Microsoft Entra ID P2 
-Azure AD External Identities -> Microsoft Entra External ID
+- Azure AD Free -> Microsoft Entra ID Free 
+- Azure AD Premium PO -> Microsoft Entra ID P1
+- Azure AD Premium P2 -> Microsoft Entra ID P2 
+- - Azure AD External Identities -> Microsoft Entra External ID
 
 ## Azure Active Directory (AD)
 
@@ -32,7 +32,7 @@ Azure AD External Identities -> Microsoft Entra External ID
 
 ### Use Cases 
 
-- Azure AD can authorize and authenticate:
+- Azure AD can authenticate and authorize:
   - To your on-premise AD: Azure AD Connect
   - To your web-application: Azure AD App Registrations
   - Allow users to login with their IpD eg. Facebook or Google: External Identities
