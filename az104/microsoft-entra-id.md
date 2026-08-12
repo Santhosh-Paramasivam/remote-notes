@@ -11,6 +11,10 @@ tags:
 
 # Microsoft Entra Id
 
+## Microsoft Entra Product Family
+
+
+
 ## Introduction
 
 > [!NOTE]
@@ -82,6 +86,9 @@ tags:
 
 ## Practical
 
+> [!NOTE]
+> There are dedicated User settings in Microsoft Entra ID for controlling the permissions of *default* users
+
 ### Initial configuration of Microsoft Entra ID
 
 - [init-config-entra-id](https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/)
@@ -104,6 +111,12 @@ tags:
   - Password administrator
   - User administrator
 
-### Misc 
+### Guest users vs. Member users
 
-- There are dedicated User settings in Microsoft Entra ID
+- Member users are internal users who are members of the Entra Tenant, and are part of the company itself
+
+- Guest users belong to other organizations, have an email or identity that is not part of the Entra Tenant, but are still users under Entra Tenant
+
+- By default, guest users have fewer permissions than member users
+
+- But guest users can be assigned any permission that member users can, including Global Administrator
