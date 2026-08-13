@@ -11,10 +11,6 @@ tags:
 
 # Microsoft Entra Id
 
-## Microsoft Entra Product Family
-
-
-
 ## Introduction
 
 > [!NOTE]

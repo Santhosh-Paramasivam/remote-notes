@@ -13,13 +13,20 @@ tags:
 
 - [azure-rbac](https://learn.microsoft.com/en-us/training/modules/secure-azure-resources-with-rbac/1-introduction)
 
+- Built on **Azure Resource Manager**
+
 ## Types of roles
+
+- [types-of-roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)
+
+- Entra roles span Microsoft services including 365 and Entra objects, whereas Azure roles only span Azure cloud
 
 ### Microsoft Entra roles
 
 - Global admin
 - Application admin
 - Application developer
+- User Administrator
 - Billing admin
 
 ### Azure roles
@@ -28,8 +35,12 @@ tags:
 - Contributor
 - Reader
 - User Access Admin
+- RBAC Admin
 
 ### Classic subscription admin roles
+
+> [!IMPORTANT]
+> These roles are retired and from Decemeber 2026 will be replaced with the Owner RBAC role
 
 - Service admins
 - Co-admins
@@ -47,7 +58,7 @@ tags:
   - Role definition
   - Scope
 
-- **Security Principle (Who):** The user, user group or **service principal** (an application) who is to be granted permission
+- **Security Principle (Who):** The user, user group or **service principal** (an application) or **managed identity** (Azure resources) who is to be granted permission
 
 - **Role definition (What):** A role or role definition is a collection of permissions.
 
